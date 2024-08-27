@@ -236,6 +236,52 @@ div.digit {
   font-weight: 500;
 }
 
+section.gallery {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+section.gallery div {
+  background-color: var(--secondary-color);
+  justify-content: center;
+}
+
+section.gallery .heading-secondary {
+  padding-left: 4rem;
+  padding-top: 3rem;
+}
+
+section.gallery .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 4rem;
+}
+
+section.gallery .container img {
+  height: 40rem;
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+section.gallery .container img:hover {
+  /* filter: grayscale(1); */
+  transform: scale(1.03);
+}
+
+.gallery-link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--span-color);
+padding: 1rem 4rem;
+}
+
+
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1200px) {
@@ -421,6 +467,14 @@ div.digit {
     font-size: 1.7rem;
     font-weight: 500;
   }
+
+  section.gallery .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 3rem 4rem;
+  }
+  
 }
 
 @media only screen and (max-width: 700px) {
@@ -630,7 +684,6 @@ div.digit {
     color: var(--primary-color);
   }
 
-  
   .about .about-container .textbox .paragraph {
     width: 100%;
     text-align: center;
@@ -641,13 +694,18 @@ div.digit {
     font-size: 1.5rem;
     font-weight: 500;
   }
-
 }
 
 @media only screen and (max-width: 450px) {
   .center-children {
     padding-left: 2vw !important;
     padding-right: 2vw !important;
+  }
+  section.gallery .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding: 3rem 4rem;
   }
 }
 
@@ -674,6 +732,16 @@ div.digit {
     margin-top: 1rem;
     width: 70%;
     margin: 0 auto;
+  }
+
+  section.gallery .container img {
+    height: 35rem;
+    width: 100%;
+  
+    object-fit: cover;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 500ms;
   }
 }
 
@@ -756,7 +824,6 @@ div.digit {
     color: var(--primary-color);
   }
 
-  
   .about .about-container .textbox .paragraph {
     width: 100%;
     text-align: center;
@@ -820,5 +887,5 @@ div.digit {
 
   section.about .heading-secondary {
     padding-left: 2rem;
-}
+  }
 }
