@@ -236,9 +236,12 @@ div.digit {
   font-weight: 500;
 }
 
+/* GALLERY */
+
 section.gallery {
   margin-top: 4rem;
   margin-bottom: 6rem;
+  /* padding-bottom: 2rem; */
 }
 
 section.gallery div {
@@ -265,7 +268,7 @@ section.gallery .container img {
   object-fit: cover;
   border-radius: 4rem;
   cursor: pointer;
-  transition: 500ms;
+  transition: 400ms;
 }
 
 section.gallery .container img:hover {
@@ -273,14 +276,58 @@ section.gallery .container img:hover {
   transform: scale(1.03);
 }
 
-.gallery-link {
+a.gallery-link {
   font-size: 2rem;
   text-decoration: none;
   color: var(--span-color);
-padding: 1rem 4rem;
+  margin: 1rem 4rem;
 }
 
+/* SERIVCES */
 
+section.serivces div {
+  background-color: var(--secondary-color);
+  justify-content: center;
+}
+
+section.serivces .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6rem;
+
+  padding: 3rem 4rem;
+}
+
+section.serivces .heading-secondary {
+  padding-left: 4rem;
+  padding-top: 3rem;
+}
+
+section.serivces .heading-tertiary {
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+
+section.serivces .container img {
+  height: 40rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+section.serivces .container img:hover {
+  /* filter: grayscale(1); */
+  transform: scale(1.03);
+}
+
+footer.foot {
+  background-color: var(--secondary-color);
+  justify-content: center;
+}
 
 /* RESPONSIVE */
 
@@ -474,7 +521,20 @@ padding: 1rem 4rem;
     gap: 1rem;
     padding: 3rem 4rem;
   }
-  
+
+  section.serivces .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7rem;
+
+    padding: 3rem 4rem;
+  }
+
+  section.serivces .heading-secondary {
+    padding-left: 4rem;
+    padding-top: 3rem;
+    padding: 3rem 0 2rem 4rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -651,6 +711,14 @@ padding: 1rem 4rem;
   header.header .container {
     margin: 0;
   }
+
+  section.serivces .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  
+    padding: 3rem 4rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -693,6 +761,14 @@ padding: 1rem 4rem;
   div.digit {
     font-size: 1.5rem;
     font-weight: 500;
+  }
+
+  section.serivces .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  
+    padding: 3rem 4rem;
   }
 }
 
@@ -737,7 +813,7 @@ padding: 1rem 4rem;
   section.gallery .container img {
     height: 35rem;
     width: 100%;
-  
+
     object-fit: cover;
     border-radius: 4rem;
     cursor: pointer;
@@ -833,6 +909,15 @@ padding: 1rem 4rem;
   div.digit {
     font-size: 1.5rem;
     font-weight: 500;
+  }
+
+  section.serivces .container img {
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 400ms;
   }
 }
 
