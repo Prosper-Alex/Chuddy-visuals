@@ -327,7 +327,73 @@ section.serivces .container img:hover {
 footer.foot {
   background-color: var(--secondary-color);
   justify-content: center;
+  margin-top: 6rem;
 }
+
+footer.foot .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem 4rem;
+  color: var(--primary-color);
+  justify-content: center;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+footer.foot .container .foot-logo img {
+  height: 3.5rem;
+}
+
+footer.foot .container .foot-wrapper ul.foot-list li {
+  list-style: none;
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer.foot .container .foot-wrapper p {
+  margin-top: 2rem;
+}
+
+footer.foot .container .foot-wrapper .foot-contact {
+  display: flex;
+  gap: 2rem;
+}
+
+footer.foot .container .foot-wrapper .foot-contact {
+  color: #fff;
+}
+
+footer.foot .icons {
+  color: #ffffff;
+  display: flex;
+  font-size: 1.5rem;
+  gap: 4rem;
+  align-items: flex-end;
+}
+
+footer.foot .icons a {
+  color: #ffffff;
+  display: flex;
+  font-size: 1.5rem;
+
+  align-items: center;
+}
+
+footer.foot .icons a:hover:last-child {
+  background: linear-gradient(blue, red);
+  background-clip: inherit;
+  -webkit-text-fill-color: transparent;
+  box-sizing: 50%;
+}
+
+footer.foot .container .foot-wrapper ul li {
+  line-height: 2;
+  list-style: none;
+}
+
+
+
 
 /* RESPONSIVE */
 
@@ -662,6 +728,27 @@ footer.foot {
     justify-content: center;
     text-align: center;
   }
+
+  footer.foot div.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  footer.foot .container .foot-wrapper p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  footer.foot .icons {
+    color: #ffffff;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 4rem;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -716,7 +803,7 @@ footer.foot {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
-  
+
     padding: 3rem 4rem;
   }
 }
@@ -767,7 +854,7 @@ footer.foot {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 5rem;
-  
+
     padding: 3rem 4rem;
   }
 }
