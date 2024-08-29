@@ -20,17 +20,24 @@
   </head>
   <body>
     <nav class="navigation">
+      <input type="checkbox" id="checkbox" />
       <figure class="nav_logo">
         <img src="/assets/logos/b chuddy.png" alt="Chuddy-Visuals Logo" />
       </figure>
+
+      <ul class="nav_list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
       <div class="nav_action">
-        <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
-          <a href="http://wa.me/+447466219335">Contact Us</a>
-        </div>
+        <a href="http://wa.me/+447466219335">Contact Us</a>
+        <label class="nav_button" for="checkbox"
+          ><span class="open"><ion-icon name="menu"></ion-icon></span
+          ><span class="close"><ion-icon name="close"></ion-icon></span
+        ></label>
       </div>
     </nav>
 
