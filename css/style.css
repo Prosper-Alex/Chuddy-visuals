@@ -496,6 +496,10 @@ footer.foot .container .foot-wrapper ul li {
     color: var(--primary-color);
   }
 
+  .navigation .nav_action{
+    display: flex;
+  }
+
   .navigation .nav_button {
     display: block;
     position: relative;
@@ -634,6 +638,8 @@ footer.foot .container .foot-wrapper ul li {
     width: 100%;
     font-size: 1.4rem;
   }
+
+  
 }
 
 @media only screen and (max-width: 800px) {
@@ -846,6 +852,11 @@ footer.foot .container .foot-wrapper ul li {
     gap: 4rem;
     align-items: center;
   }
+
+  .navigation .nav_action {
+    gap: 0.5rem;
+    align-items: center;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -979,6 +990,20 @@ footer.foot .container .foot-wrapper ul li {
     width: min(100%, 30rem);
   }
 
+  
+
+  .navigation .nav_action a {
+    flex: 1;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    color: var(--primary-color);
+    background-color: var(--btn-color);
+    padding: 1.2rem 1.2rem;
+    border-radius: 10px;
+}
+
   header.header .container .wrapper.right {
     gap: 0;
   }
@@ -1032,6 +1057,15 @@ footer.foot .container .foot-wrapper ul li {
     padding: 1.1rem 1.5rem;
     border-radius: 10px;
   }
+
+  .navigation .nav_button {
+    display: block;
+    position: relative;
+    z-index: 101;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+  }
+
 
   header.header .container .wrapper.right {
     gap: 0;
