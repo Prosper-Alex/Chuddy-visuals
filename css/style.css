@@ -38,9 +38,9 @@ body {
 }
 
 .heading-secondary {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: var(--primary-color);
 }
 
@@ -48,6 +48,7 @@ body {
   font-size: 3.3rem;
   font-weight: 500;
   color: var(--primary-color);
+  margin-bottom: 1.5rem;
 }
 
 .paragraph {
@@ -63,12 +64,15 @@ body {
 /* NAVIGATION */
 
 .navigation {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--secondary-color);
   height: 9.6rem;
   padding: 0 4.8rem;
+  z-index: 1;
 }
 
 .navigation .nav_button {
@@ -234,38 +238,38 @@ section.about {
   margin-bottom: 5rem;
 }
 
-section.about div {
-  padding-top: 3rem;
-  justify-content: center;
+section.about > div {
+  padding: 3rem;
   background-color: var(--secondary-color);
-}
-
-section.about .heading-secondary {
-  padding-left: 4rem;
+  border-radius: 1rem;
 }
 
 .about .about-container {
-  padding: 4rem 4rem;
   color: var(--primary-color);
   display: flex;
   align-items: center;
   gap: 3rem;
 }
 
+.about .about-container .composition {
+  height: 35rem;
+  flex: 1;
+}
+
 .about .about-container .composition img {
-  height: 25rem;
-  width: 30rem;
-  flex: 0.6;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
 }
 
 .about .about-container .textbox {
-  flex: 1.4;
-  flex-grow: 1;
+  flex: 2;
 }
 
 .about .about-container .textbox .paragraph {
-  width: 80%;
+ margin-bottom: 3rem;
 }
 
 .about .about-container .textbox .about-details {
@@ -288,50 +292,55 @@ section.gallery {
   /* padding-bottom: 2rem; */
 }
 
-section.gallery div {
+section.gallery > div {
+  padding: 3rem;
   background-color: var(--secondary-color);
-  justify-content: center;
-}
-
-section.gallery .heading-secondary {
-  padding-left: 4rem;
-  padding-top: 3rem;
+  border-radius: 1rem;
 }
 
 section.gallery .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 3rem 4rem;
+  gap: .5rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+
+section.gallery .container figure {
+  height: 70vh;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 section.gallery .container img {
-  height: 40rem;
+  height: 100%;
   width: 100%;
-
   object-fit: cover;
-  border-radius: 4rem;
-  cursor: pointer;
-  transition: 400ms;
+  transition: 300ms;
 }
 
-section.gallery .container img:hover {
-  /* filter: grayscale(1); */
+section.gallery .container figure img:hover {
   transform: scale(1.03);
 }
 
-a.gallery-link {
+section.gallery a.gallery-link {
   font-size: 2rem;
   text-decoration: none;
   color: var(--span-color);
-  margin: 1rem 4rem;
+  padding: 1rem 4rem;
+  padding-right: 0;
+  display: block;
+  text-align: right;
 }
 
 /* SERIVCES */
 
-section.serivces div {
+section.serivces > div {
+  padding: 3rem;
   background-color: var(--secondary-color);
-  justify-content: center;
+  border-radius: 1rem;
 }
 
 section.serivces .container {
@@ -340,11 +349,6 @@ section.serivces .container {
   gap: 6rem;
 
   padding: 3rem 4rem;
-}
-
-section.serivces .heading-secondary {
-  padding-left: 4rem;
-  padding-top: 3rem;
 }
 
 section.serivces .heading-tertiary {
@@ -358,14 +362,13 @@ section.serivces .container img {
   height: 40rem;
   width: 100%;
   object-fit: cover;
-  border-radius: 4rem;
+  border-radius: 3rem;
   cursor: pointer;
   transition: 400ms;
 }
 
 section.serivces .container img:hover {
-  /* filter: grayscale(1); */
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 footer.foot {
@@ -644,7 +647,6 @@ footer.foot .container .foot-wrapper ul li {
   .heading-secondary {
     font-size: 3.3rem;
     font-weight: 500;
-    margin-bottom: 0;
     color: var(--primary-color);
   }
 
@@ -662,6 +664,7 @@ footer.foot .container .foot-wrapper ul li {
     display: flex;
     vertical-align: center;
   }
+
   section.images .container img {
     height: 35rem;
     width: 37rem;
@@ -683,10 +686,7 @@ footer.foot .container .foot-wrapper ul li {
   }
 
   section.gallery .container {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 3rem 4rem;
   }
 
   section.serivces .container {
@@ -970,18 +970,16 @@ footer.foot .container .foot-wrapper ul li {
     padding-left: 2vw !important;
     padding-right: 2vw !important;
   }
+
   section.gallery .container {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    padding: 3rem 4rem;
   }
 }
 
 @media only screen and (max-width: 420px) {
   .navigation {
-    height: 9.6rem;
-    padding: 0px 2rem;
+    height: 5.5rem;
+    padding: 0px 1rem;
   }
 
   .navigation .nav_list {
@@ -1019,16 +1017,6 @@ footer.foot .container .foot-wrapper ul li {
     margin: 0 auto;
   }
 
-  section.gallery .container img {
-    height: 35rem;
-    width: 100%;
-
-    object-fit: cover;
-    border-radius: 4rem;
-    cursor: pointer;
-    transition: 500ms;
-  }
-
   footer.foot .container .foot-logo img {
     margin-left: -1rem;
     height: 3.5rem;
@@ -1037,8 +1025,7 @@ footer.foot .container .foot-wrapper ul li {
 
 @media only screen and (max-width: 400px) {
   .navigation {
-    height: 9.6rem;
-    padding: 0px 1.8rem;
+    padding: 0px 1.5rem;
   }
 
   .navigation .nav_logo {
