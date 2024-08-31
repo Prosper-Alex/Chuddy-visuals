@@ -362,7 +362,7 @@ section.serivces .container img {
   height: 40rem;
   width: 100%;
   object-fit: cover;
-  border-radius: 3rem;
+  border-radius: 1rem;
   cursor: pointer;
   transition: 400ms;
 }
@@ -407,6 +407,19 @@ footer.foot .container .foot-wrapper .foot-contact {
   gap: 2rem;
 }
 
+footer.foot .container .foot-wrapper .foot-list {
+  display: flex;
+  gap: 1rem;
+  margin:2rem 0;
+}
+
+footer.foot .container .foot-wrapper .foot-list li a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+
 footer.foot .container .foot-wrapper .foot-contact {
   color: #fff;
 }
@@ -435,8 +448,9 @@ footer.foot .icons a:hover:last-child {
 }
 
 footer.foot .container .foot-wrapper ul li {
-  line-height: 2;
+  line-height: 2em;
   list-style: none;
+  font-size: 1.5rem;
 }
 
 /* RESPONSIVE */
@@ -673,7 +687,7 @@ footer.foot .container .foot-wrapper ul li {
   }
 
   .about .about-container {
-    padding: 4rem 2rem;
+    padding: 0;
     color: var(--primary-color);
     display: flex;
     align-items: center;
@@ -905,6 +919,12 @@ footer.foot .container .foot-wrapper ul li {
     margin: 0;
   }
 
+  section.serivces .heading-secondary {
+    padding-left: 0; 
+     padding-top: 0;
+     padding: 0;
+}
+
   section.serivces .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -960,8 +980,7 @@ footer.foot .container .foot-wrapper ul li {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 5rem;
-
-    padding: 3rem 4rem;
+    padding: 3rem 1rem;
   }
 }
 
@@ -978,7 +997,7 @@ footer.foot .container .foot-wrapper ul li {
 
 @media only screen and (max-width: 420px) {
   .navigation {
-    height: 5.5rem;
+    height: 6.5rem;
     padding: 0px 1rem;
   }
 
@@ -1121,10 +1140,10 @@ footer.foot .container .foot-wrapper ul li {
   }
 
   section.serivces .container img {
-    height: 35rem;
+    height: 50vh;
     width: 100%;
     object-fit: cover;
-    border-radius: 4rem;
+    border-radius: 1rem;
     cursor: pointer;
     transition: 400ms;
   }
