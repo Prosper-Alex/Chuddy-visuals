@@ -163,7 +163,7 @@ header.header .container .wrapper {
 header.header .container .wrapper.right {
   display: flex;
   align-items: flex-end;
-  animation: slide-right 1.5s 2s ease-in-out;
+  animation: slide-right 2s ease-in-out;
 }
 
 header.header .container .wrapper .heading-primary {
@@ -171,7 +171,7 @@ header.header .container .wrapper .heading-primary {
 }
 
 header.header .container .wrapper.left {
-  animation: slide-left 1.5s 2s ease-in-out;
+  animation: slide-left 2s ease-in-out;
   display: flex;
   gap: 5rem;
   margin-top: 2rem;
@@ -269,7 +269,7 @@ section.about > div {
 }
 
 .about .about-container .textbox .paragraph {
- margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .about .about-container .textbox .about-details {
@@ -301,7 +301,7 @@ section.gallery > div {
 section.gallery .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: .5rem;
+  gap: 0.5rem;
   overflow: hidden;
   border-radius: 2rem;
   margin-bottom: 3rem;
@@ -410,7 +410,7 @@ footer.foot .container .foot-wrapper .foot-contact {
 footer.foot .container .foot-wrapper .foot-list {
   display: flex;
   gap: 1rem;
-  margin:2rem 0;
+  margin: 2rem 0;
 }
 
 footer.foot .container .foot-wrapper .foot-list li a {
@@ -418,7 +418,6 @@ footer.foot .container .foot-wrapper .foot-list li a {
   text-decoration: none;
   color: #fff;
 }
-
 
 footer.foot .container .foot-wrapper .foot-contact {
   color: #fff;
@@ -920,10 +919,10 @@ footer.foot .container .foot-wrapper ul li {
   }
 
   section.serivces .heading-secondary {
-    padding-left: 0; 
-     padding-top: 0;
-     padding: 0;
-}
+    padding-left: 0;
+    padding-top: 0;
+    padding: 0;
+  }
 
   section.serivces .container {
     display: grid;
