@@ -810,6 +810,7 @@ footer.foot .container .foot-wrapper ul li {
     width: 40rem;
     object-fit: cover;
     border-radius: 0px;
+    object-position: top;
   }
 
   section.images .container-wrapper img {
